@@ -1,0 +1,93 @@
+# Use this file to manage the loading of slash commands in your Discord.
+# Set the value to 'true' to enable a command or 'false' to disable it.
+# Changes require a bot restart to take effect.
+
+# Backups Commands - Commands related to managing server backups
+backup: true
+
+# General Commands - Commonly used and fun commands
+advice: true
+avatar: true
+banner: true
+cat: true
+catfact: true
+coinflip: true
+darkjoke: true
+dog: true
+duck: true
+dogfact: true
+fact: true
+fliptext: true
+lennyface: true
+help: true
+meme: true
+profile: true
+serverinfo: true
+snipe: true
+suggestion: true
+translate: true
+wyr: true
+8ball: true
+stealemoji: true
+ascii: true
+quote: true
+roast: true
+compliment: true
+say: true
+rps: true
+tictactoe: true
+connectfour: true
+roll: true
+hangman: true
+slap: true
+kill: true
+hug: true
+reminder: true
+
+# Giveaways Commands - Manage giveaways and contests
+giveaway: true
+
+# Leveling Commands - Commands for server leveling and ranking systems
+leaderboard: true
+rank: true
+
+# Moderation Commands - Tools for moderators to manage the server
+addrole: true
+roleall: true
+antihoist: true
+ban: true
+tempban: true
+clearchannel: true
+clearhistory: true
+cleartimeout: true
+embed: true
+history: true
+kick: true
+poll: true
+purge: true
+removerole: true
+setnote: true
+timeout: true
+unban: true
+warn: true
+unwarn: true
+slowmode: true
+temprole: true
+nickname: true
+
+# Music Commands - Control music playback in voice channels
+music: true
+  
+# Ticket Commands - Manage support and other types of tickets
+add: true
+panel: true
+remove: true
+close: true
+
+# Utility Commands - Various utility and administrative commands
+viewdownloads: true
+birthday: true
+tempvoice: true
+afk: true
+botavatar: true
+twitch: true

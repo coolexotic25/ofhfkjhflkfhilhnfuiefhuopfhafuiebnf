@@ -1,0 +1,508 @@
+# ===========================================================================
+# Drako Bot Language Configuration
+# If you find any issues, need support, or have a suggestion for the bot, please join our support server and create a ticket, 
+# http://discord.drakodevelopment.net
+# ===========================================================================
+
+# ===========================================================================
+# BASIC MESSAGES
+# ===========================================================================
+NoPermsMessage: "You don't have permission to use this command."
+SuccessEmbedTitle: "Successful"
+ErrorEmbedTitle: "An error has occurred"
+
+# ===========================================================================
+# BACKUP COMMAND MESSAGES
+# ===========================================================================
+BackupCreating: "✅ | Creating backup, please wait..."
+BackupCreatedEmbed: "Successfully **created a backup** of this guild!"
+BackupCreatedMsg: "✅ | Successfully created a backup of this guild, The backup information has been sent to your DMS!"
+BackupWrongUsage: "Please specify a valid backup ID!"
+BackupDeleted: "Successfully deleted backup!"
+BackupNotFound: "No backup found with that ID!"
+BackupLoadWarning: "⚠️ All the server channels, roles, and settings will be cleared. Are you sure you want to load the backup?"
+BackupLoading: "⚠️ Loading backup..."
+BackupLoaded: "Backup loaded successfully!"
+BackupCancelled: "Cancelled!"
+BackupEmbedUsage: "Usage"
+BackupCreatedBy: "Created by:"
+BackupButtonConfirm: "Confirm"
+BackupButtonCancel: "Cancel"
+
+# ===========================================================================
+# AVATAR + BANNER COMMAND MESSAGES
+# ===========================================================================
+AvatarSearchedBy: "Searched by:"
+AvatarClickHere: "Click here for image"
+
+BannerClickHere: "Click here to see the full banner"
+BannerSearchedBy: "Banner searched by"
+NoBannerSet: "This user does not have a banner set."
+
+# ===========================================================================
+# COINFLIP COMMAND MESSAGES
+# ===========================================================================
+CoinflipMsg: "{user-tag} flipped a coin!" # Available variables: {user-tag}
+CoinflipDone: "It landed on **{result}**!" # Available variables: {result}
+
+# ===========================================================================
+# MEME COMMAND MESSAGES
+# ===========================================================================
+MemeViewThread: "View thread"
+
+# ===========================================================================
+# GAMES COMMAND MESSAGES
+# ===========================================================================
+Roll: "🎲 You rolled a ${rollResult}!"
+
+wordSnake:
+  start: "Word Snake game started! The first word is: `${word}`. The next word must start with the letter `${letter}`."
+  invalidWord: "Invalid word! Remember, the word must start with the letter `${letter}`."
+  timeUp: "Time's up! The last word was `${lastWord}`. The game is over, and the final score is `${score}`."
+  gameOver: "The game is over! Final score: `${score}`."
+
+Hangman:
+  commandDescription: "Play Hangman!"
+  activeGameWarning: "You already have an active game. Please finish it before starting a new one."
+  gameStartMessage: "Starting Hangman game... Type your guesses!"
+  winMessage: "Congratulations, {username}! You won!"
+  gameOverMessage: "Game Over! The word was: {word}"
+  continueMessage: "Keep guessing!"
+  words:
+    - Ocean
+    - Pirate
+    - Castle
+    - Rainbow
+    - Forest
+    - Dragon
+    - Music
+    - Cookie
+    - Pumpkin
+    - Lantern
+    - Shadow
+    - Comet
+    - Candle
+    - Guitar
+    - Puzzle
+    - Dolphin
+    - Rocket
+    - Wizard
+    - Knight
+    - Circus
+    - Discord 
+    - Drako
+
+  embeds:
+    gameTitle: "🔤 Hangman Game: {username}"
+    wordToGuess: "Word to Guess"
+    guessesLeft: "Guesses Left"
+    progress: "Progress"
+    useChatToGuess: "Use the chat to guess a letter.\nType only one letter per message."
+    guessFooter: "Type your guess in the chat. Incorrect guesses will deplete your guesses left!"
+    gameOverTitle: "Game Over"
+    finalWord: "Final Word:"
+    gameEndMessage: "Game has ended."
+    thanksForPlaying: "Thanks for playing!"
+
+# ===========================================================================
+# SNIPE COMMAND MESSAGES
+# ===========================================================================
+SnipeNoMsg: "No message to snipe in this channel."
+ErrorGeneric: "Sorry, there was an error with the command."
+
+# ===========================================================================
+# GIVEAWAY COMMAND MESSAGES
+# ===========================================================================
+ 
+Giveaways: # Placeholders: {prize} {serverName} {hostedBy} {whitelistRoles} {blacklistRoles} {channel} {winnerCount}
+ EntrySuccessMessage: "You have successfully entered the giveaway hosted by {hostedBy}!"
+ EntryErrorMessage: "An error occurred while trying to enter the giveaway. Please contact Drako Development."
+ GiveawayNotFound: "Giveaway not found or it might have been deleted...."
+ GiveawayAlreadyEnded: "Giveaway already ended."
+ GiveawayHasntEnded: "Giveaway has not ended yet."
+ WinMessage: "Congratulations to the winners of the **{prize}** giveaway!  {winners}" # {winners} placeholder
+ WinRerollMessage: "Giveaway rerolled! Congratulations to the new winners of the **{prize}** giveaway!  {winners}" # {winners} placeholder
+ WinnerDirectMessage: "Congrats, you won the **{prize}** giveaway! Please open a ticket in **{serverName}** server. {channel}"
+ NoParticipationMessage: "No winners, nobody entered the {prize} giveaway."
+ IncorrectRoleMessage: "You do not have the required role(s) to join the {prize} giveaway!"
+ IncorrectMinimumAccountAgeMessage: "Your account isn't old enough to participate in the {prize} giveaway!"
+ IncorrectMinimumServerJoinDateMessage: "You haven't been in the {serverName} discord server long enough to participate in the {prize} giveaway!"
+ AlreadyEnteredMessage: "You have already entered the {prize} giveaway!"
+
+ Embeds:
+  ActiveGiveaway:
+    Prize: "## {prize} Giveaway x{winnerCount}!"
+    HostedByField: "Hosted by:"
+    EndsInField: "Ends in:"
+    EntriesField: "Entries:"
+    WhitelistRoleField: "Who can enter"
+    BlacklistRoleField: "Who can't enter"
+    MinimumSeverJoinDateField: "Minimum server join date"
+    MinimumAccountAgeField: "Minimum account age"
+  
+  EndedGiveaway:
+    Title: "## The {prize} giveaway has ended!"
+    WinnersField: "Winners:"
+    EntriesField: "Entries:"
+
+# ===========================================================================
+# AFK COMMAND MESSAGES
+# ===========================================================================
+AFK:
+ Success: "AFK status set"
+ ErrorMessges:
+   NoPermission: "You do not have permission to use the AFK command."
+   NickNameMissingPermissions: "Could not set nickname due to missing permissions."
+   NickNameOwner: "Your AFK status is set, but I can't change your nickname because you own the server"
+   AlreadyMarkedAFK: "You are already marked as AFK!"
+   TimeFormat: "Invalid time format. Please use the format: 1s (seconds), 1m (minutes), 1h (hours), 1d (days)"
+   TimeParseError: "Could not parse the time input. Please ensure it's in a correct format."
+   RoleCreate: "There was an error creating the AFK role. Please check my permissions."
+
+
+# ===========================================================================
+# LEADERBOARD COMMAND MESSAGES
+# ===========================================================================
+Leaderboard:
+  LevelingDisabled: "The leveling system is disabled in {guild}."
+  LevelsTitle: "Levels Leaderboard in {guild}"
+  LevelsDescription: "{index}. <@{userId}> - **Level:** {level}, **XP:** {xp}"
+  MessagesTitle: "Messages Leaderboard in {guild}"
+  MessagesDescription: "{index}. <@{userId}> - **Messages:** {totalMessages}"
+  Footer: "📅 Updated At {longtime}, {shorttime}"
+  Error: "Sorry, there was an error retrieving the leaderboard in {guild}."
+
+# ===========================================================================
+# ADDROLE/REMOVEROLE COMMAND MESSAGES
+# ===========================================================================
+AddRole:
+  AddroleSelfRole: "You cannot add a role to yourself."
+  AddroleHighestRole: "The selected role is higher than my highest role."
+  AddroleUserRoleNotAbove: "You cannot add a role higher or equal to your highest role."
+  AddroleAlreadyHave: "The user already has this role."
+  AddroleSuccess: "Successfully added {role} to {user}"
+  AddroleError: "There was an error adding the role."
+  RoleAllUserHighestRole: "You cannot assign a role that is higher than or equal to your highest role."
+
+RoleAll:
+  RoleAllConfirmationAdd: "Are you sure you want to add the {role} role to all users?"
+  RoleAllConfirmationRemove: "Are you sure you want to remove the {role} role from all users?"
+  RoleAllHighestRole: "The role you selected is higher or equal to the bot's highest role. Action not allowed."
+  RoleAllUserHighestRole: "The role you selected is higher or equal to your highest role. Action not allowed."
+  RoleAllSuccessAdd: "Successfully added the {role} role to all users."
+  RoleAllSuccessRemove: "Successfully removed the {role} role from all users."
+  RoleAllError: "An error occurred while adding/removing the role."
+  RoleAllCancelled: "Action has been cancelled."
+  RoleAllTimeOut: "The command timed out. No action taken."
+
+Temprole:
+  SameOrHigherRoleError: "You cannot assign roles that are the same rank or higher than your current highest role."
+  InvalidDurationFormat: "Invalid duration format. Please use formats like 1h, 15m, 1d, etc."
+  RoleAssigned: "Temporary role {role} assigned to {user} for {duration}."
+  ErrorAssigningRole: "There was an error assigning the temp role."
+  MissingPermissionsError: "The bot does not have sufficient permissions to assign this role."
+  UnknownRoleError: "The specified role is invalid or unknown. Please specify a valid role."
+
+# ===========================================================================
+# HISTORY/CLEARHISTORY COMMAND MESSAGES
+# ===========================================================================
+History:
+  HistoryEmbedTitle: "User History for {user-tag}"
+  HistoryEmbedUserInfo: "👤 User Information"
+  HistoryEmbedName: "Name"
+  HistoryEmbedJoinedServer: "📆 Joined Server On"
+  HistoryTotalMessages: "💌 Total Messages"
+  HistoryEmbedNote: "📝 Note"
+  HistoryEmbedWarnings: "⚠️ Warnings"
+  HistoryEmbedTimeouts: "⏲️ Timeouts"
+  HistoryEmbedKicks: "👢 Kicks"
+  HistoryEmbedBans: "🔨 Bans"
+
+
+ClearhistorySuccess: "Successfully cleared {user}'s history!" # Available variables: {user}
+
+# ===========================================================================
+# POLL COMMAND MESSAGES
+# ===========================================================================
+PollEmbedTitle: "A poll has been started!"
+PollEmbedFooter: "Poll Started By:"
+
+# ===========================================================================
+# PURGE COMMAND MESSAGES
+# ===========================================================================
+Purge:
+  NoPermsMessage: "You do not have permission to purge messages."
+  PurgeCleared: "{amount} messages have been successfully purged."
+  PurgeOld: "Error: Unable to purge messages older than 14 days."
+  ModerationEmbedTitle: "Moderation Action"
+  ModerationEmbedAction: "Action: Purge"
+  ModerationEmbedDetails: "Staff: <@{user-id}>\nAmount: {amount}\nChannel: {channel}"
+
+# ===========================================================================
+# SLOWMODE COMMAND MESSAGES
+# ===========================================================================
+SlowmodeReset: "The cooldown for this channel has been reset."
+SlowmodeFailed: "Failed to set slowmode in this channel, check your slowmode length."
+SlowmodeSuccess: "The cooldown for this channel has been set to **{time}** seconds." # Available variables: {time}
+
+# ===========================================================================
+# ANTIHOIST COMMAND MESSAGES
+# ===========================================================================
+AntiHoist:
+  NoPermission: "You do not have permission to use the antihoist command."
+  CommandCompleted: "Successfully executed the antihoist command."
+  NotifyUserMessage: "Hello {user}! Your username has been changed from `{oldDisplayName}` to `{newDisplayName}` in **{guildName}** because they dont allow name hoisting."
+# ===========================================================================
+# WARN COMMAND MESSAGES
+# ===========================================================================
+Unwarn:
+  NoPermission: "You don't have permission to use this command."
+  NoWarnings: "No warnings found for this user."
+  InvalidWarningID: "Invalid warning ID."
+  WarningRemoved: "Warning removed from {userTag}: `{reason}`."
+  Error: "An error occurred while processing your request."
+
+Warn:
+  BotOrSelf: "You cannot warn a bot or yourself."
+  Success: "User {userTag} has been warned for the following reason: {reason}"
+  Error: "There was an error trying to warn this user."
+
+# ===========================================================================
+# TEMPVOICE COMMAND MESSAGES
+# ===========================================================================
+tempVoice:
+  userNotInVoiceChannel: "You are not currently in a voice channel."
+  channelNotTemporary: "This is not a temporary voice channel."
+  noPermission: "You do not have permission to use this command."
+  errorOccurred: "An error occurred: {error}"
+  channelLocked: "Your temporary voice channel has been locked."
+  channelUnlocked: "Your temporary voice channel has been unlocked."
+  channelHidden: "Your temporary voice channel has been hidden."
+  channelVisible: "Your temporary voice channel is now visible."
+  userLimitSet: "User limit set to {limit}."
+  noUserLimit: "User limit has been removed."
+  channelRenamed: "Voice channel renamed to {newname}."
+  userPermitted: "{user} is now allowed to join the channel."
+  userUnpermitted: "{user} is now not allowed to join the channel."
+  userNotInChannel: "{user} is not in your voice channel."
+  userKicked: "{user} has been kicked from the channel."
+  userBanned: "{user} has been banned from your temporary voice channels."
+  userAlreadyBanned: "{user} is already banned."
+  userUnbanned: "{user} has been unbanned from your temporary voice channels."
+  userNotBanned: "{user} is not currently banned."
+  triggerChannelDeleted: "Trigger channel with ID {id} has been deleted."
+  noTriggerChannels: "No trigger channels are configured."
+
+
+# ===========================================================================
+# MUSIC COMMAND MESSAGES
+# ===========================================================================
+Music:
+  NoPermission: "You do not have permission to use the music command."
+  Error: "Something went wrong."
+  NotInVoiceChannel: "You must be in a voice channel to use them music command."
+  NotInSameVoiceChannel: "You must be in the same voice channel to use them music command."
+  AddedToQueue: "Added track to queue."
+  QueryNotFound: "No results found for your query."
+  NoMusicInQueue: "No music in queue."
+  QueueCleared: "Cleared the queue!"
+  NoPreviousMusic: "No music to go back to."
+  NoMusicPlaying: "There is no music currently playing."
+  AddingTrack: "Adding track to queue"
+  Skipped: "Skipped **{title}**."
+  NothingToSkip: "There is nothing to skip."
+  Paused: "Paused **{title}**."
+  AlreadyPaused: "**{title}** is already paused."
+  Resumed: "Resumed **{title}**."
+  AlreadyResumed: "**{title}** is already resumed."
+  Seeked:
+   Success: "Seeked to **{time}** in the track."
+   Error: "Failed to seek to position **{time}** in the track."
+  WentBackATrack: "Went back to the previous track."
+  Looping:
+   Off: "Looping is now **{state}**."
+   Track: "Looping mode: **{state}**."
+   Queue: "Looping mode: **{state}**."
+   Autoplay: "Looping mode: **{state}**."
+  Move:
+   InvalidPosition: "Invalid track position or move position."
+   Success: "Moved **{track}** to position **{newPosition}** in the queue."
+   Error: "An error occurred while trying to move **{track}**."
+  Filters:
+   EmbedError: "An error occurred while trying to show the filters embed."
+   Fields:
+    Enabled: "Enabled"
+    Disabled: "Disabled"
+  NowPlaying:
+    GeneratingError: "Rrror generating the now playing image."
+# ===========================================================================
+# TICKET MESSAGES
+# ===========================================================================
+NotInTicketChannel: "You're not in a ticket channel!"
+TicketUserAdded: "Added **{user} ({user-tag})** to the ticket." # Available variables: {user}, {user-tag}
+TicketUserRemoved: "Removed **{user} ({user-tag})** from the ticket." # Available variables: {user}, {user-tag}
+
+TicketLogUserAddEmbedTitle: "🗒 Ticket User Added"
+TicketLogUserRemoveEmbedTitle: "🗒 Ticket User Removed"
+TicketLogUser: "User"
+TicketLogTicket: "Ticket"
+TicketLogAdded: "Added"
+TicketLogRemoved: "Removed"
+
+TicketCreatedMsg: "Your ticket has been created in"
+TicketCloseButton: "Close Ticket"
+DeletingTicket: "Deleting ticket in 5 seconds"
+TicketClosedTitle: "Ticket Closed"
+
+TicketLogChannelClosedEmbedTitle: "Ticket Channel Closed"
+TicketLogClosedBy: "Closed by"
+
+# ===========================================================================
+# MODERATION LOGS
+# ===========================================================================
+ModerationEmbedTitle: "Moderation Action"
+ModerationEmbedAction: "Action:"
+ModerationEmbedDetails: "Details:"
+
+ClearChannel:
+  ClearChannelPrompt: "Are you sure you want to clear this channel?"
+  ClearChannelCleared: "This channel was cleared by {user}."
+  ClearChannelGif: "https://media1.tenor.com/images/e275783c9a40b4551481a75a542cdc79/tenor.gif?itemid=3429833"
+  CancelClear: "Channel clear cancelled."
+  ClearTimeout: "Channel clear timed out."
+
+Nickname:
+  Description: "Change a user's nickname"
+  UserOptionDescription: "The user whose nickname to change"
+  NicknameOptionDescription: "The new nickname for the user"
+  NoPermsMessage: "You do not have permission to use this command."
+  UserNotFound: "User not found in the server."
+  NicknameChangeSuccess: "Nickname for {user} has been changed to {nickname}."
+  NicknameChangeFailure: "Failed to change the nickname. I might not have the required permissions."
+
+Ban:
+  UserNotFound: "The specified user could not be found."
+  UserFailedDM: "The user has been banned but I cannot DM them as they have them disabled."
+  CantBanSelf: "You cannot ban yourself."
+  CantBanUser: "I cannot ban this user. They might have a higher role than me or the same role as me."
+  Success: "Successfully banned {userTag} for {reason}."
+  Error: "There was an error trying to ban this user."
+
+TempBan:
+  NoPermsMessage: "You do not have the necessary permissions to use this command."
+  UserNotFound: "The specified user could not be found. Please check the input."
+  InvalidDuration: "Invalid duration format. Please use a valid format like '1d 2h 15m'."
+  CantBanUser: "This user cannot be banned. They might have a higher role or special permissions."
+  Success: "Successfully temp-banned {userTag} for {duration}. Reason: {reason}."
+  Error: "An error occurred while trying to temp-ban the user. Please try again later."
+
+
+Unban:
+  UnbanUserNotBanned: "This user is not currently banned."
+  UnbanMsg: "Successfully unbanned {user}."
+  UnbanError: "An error occurred while processing the unban."
+
+Kick:
+  UserNotFoundInGuild: "User not found in this guild."
+  CannotKickSelf: "You cannot kick yourself."
+  CannotKickUser: "Cannot kick this user."
+  DMFailed: "Failed to send DM. Kick cancelled."
+  KickSuccess: "Successfully kicked {userTag} for: {reason}"
+  KickError: "There was an error trying to kick this user."
+
+ClearTimeout:
+  UserNotFound: "User not found in this guild."
+  NoTimeout: "{userTag} is not currently timed out."
+  TimeoutCleared: "Timeout successfully removed from {userTag}."
+  Error: "Failed to clear timeout."
+
+Removerole:
+  Self: "You can't remove roles from yourself."
+  NoRole: "{user} doesn't have the {role} role."
+  AddroleHighestRole: "You cannot modify a role higher or equal to your highest role."
+  Error: "An error occurred while removing the role."
+  UserMsg: "You have been removed from the role **{role}** in {guild-name}"
+  EmbedTitle: "Role Removed"
+  EmbedRemovedBy: "Removed By:"
+  EmbedRemovedFrom: "Removed From:"
+  EmbedIconURL: "https://i.imgur.com/MdiCK2c.png" 
+  RemoveroleNoRole: "{user} doesn't have {role}"
+  HigherRoleError: "You cannot remove a role higher or equal to your highest role."
+
+SetNote:
+  NoteLongerThan250: "Notes can't be longer than 250 characters!"
+  NoteCantAddBot: "You can't add a note to a bot!"
+  NoteSuccess: "Successfully added note to **{user}**"
+  NoteError: "There was an error setting the note."
+
+AddroleSuccess: "Added role {role} to {user}."
+AddroleError: "An error occurred while adding the role."
+# ===========================================================================
+# 8BALL COMMAND MESSAGES
+# ===========================================================================
+EightBallQuestion: "Question"
+EightBallAnswer: "Answer"
+
+EightBallReplies: ["Never", "Absolutely", "Absolutely, You should also go buy some stocks", "Without a doubt", "Yes, definitely", "It is certain", "Not so sure", "You tell me", "Unclear, ask again", "Possible, but not probable", "Yes", "My reply is yes", "For sure", "Could be", "Negative", "Most likely", "As I see it, yes", "No", "My reply is no", "I see good things happening", "Absolutely not", "Better not tell you now", "Signs point to yes", "It is decidedly so"]
+
+# ===========================================================================
+# FUN COMMAND MESSAGES
+# ===========================================================================
+ConnectFour:
+  OwnGame: "Start your own game!"
+  ColumnFull: "This column is full, try another one"
+  Win: "## **Well done {user}! You won!**"
+  Tie: "## **It's a tie {user}!**"
+  Lost: "## **Sorry {user}, you lost!**"
+  Columns: "Column numbers. Use the buttons below to make a move."
+  GameOver: "Game Over"
+  ThanksForPlaying: "Thanks for playing!"
+
+TicTacToe:
+  Win: "## **Well done {user}! You won!**"
+  Tie: "## **It's a tie {user}!**"
+  Lost: "## **Sorry {user}, you lost!**"
+  GameOver: "Game Over"
+  ThanksForPlaying: "Thanks for playing!"
+
+RockPaperScissors:
+  RockPaperScissors: "**RockPaperScissors**"
+  YourChoice: "## You chose **{userChoice}**, and the bot chose **{botChoice}**."
+  Win: "## **Well done {user}! You won!**"
+  Tie: "## **It's a tie {user}!**"
+  Lost: "## **Sorry {user}, you lost!**"
+  GameEnded: "Game ended!"
+  ThanksForPlaying: "Thanks for playing!"
+  CantPlaySomeoneElsesGame: "You cannot play someone else's game!"
+
+# ===========================================================================
+# BIRTHDAY SYSTEM
+# ===========================================================================
+BirthdayEmbedTitle: ":partying_face: Successfully set your birthday!"
+BirthdayEmbedDescription: "I have set your birthday to ``{date}``!" # Available variables: {date}
+
+BirthdayOnce: "You can only set your birthday once!"
+BirthdayDate: "You need to enter the date of your birthday!\nExample: May 4 2004"
+BirthdayGreater: "You can't enter a year greater than ``{year}``!" # Available variables: {year}
+
+# ===========================================================================
+# SUGGESTION SYSTEM MESSAGES
+# ===========================================================================
+
+Suggestion:
+  SuggestionCreated: "Suggestion created successfully."
+  Error: "An error occurred. Please contact support."
+  SuggestionNotFound: "Suggestion not found."
+  AlreadyVoted: "You have already voted on this suggestion."
+  Upvoted: "You have upvoted this suggestion!"
+  Downvoted: "You have downvoted this suggestion!"
+  AlreadyProcessed: "This suggestion has already been processed."
+  SuggestionAccepted: "You have accepted this suggestion."
+  SuggestionDenied: "You have denied this suggestion."
+  ModalTitle: "Post your suggestion!"
+  ModalQuestion: "What is your suggestion?"
+  SuggestionsDisabled: "Suggestions are currently disabled."
+
+
+Other: # LEAVE AS DEFAULT
+  Rand: ""
